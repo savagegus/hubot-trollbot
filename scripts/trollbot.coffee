@@ -54,3 +54,9 @@ module.exports = (robot) ->
 
   robot.hear getHaterRegex('mongo(db)?'), (msg) ->
     msg.reply "MongoDB is web scale!"
+
+  robot.hear /maven/i, (msg) ->
+    msg.reply "Have you considered gradle?"
+  
+  robot.hear /docker/i, (msg) ->
+    msg.reply "https://cdn.meme.am/instances/61668115.jpg"
